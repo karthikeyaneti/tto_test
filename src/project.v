@@ -87,7 +87,6 @@ module tt_um_vga_example(
         default: get_colour = center ? 6'b11_11_11 : 6'b01_01_01;
       endcase
     end
-    return get_colour;
   endfunction
 
 
