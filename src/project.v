@@ -72,7 +72,7 @@ module tt_um_vga_example(
     input [1:0] r, c;
     begin
       case (grid[r][c])
-        4'h0: get_colour = center ? 6'hFF : 6'b01_01_01; // Empty:  Dark Gray / Board BG
+        4'h0: get_colour = center ? 6'b11_11_11 : 6'b01_01_01; // Empty:  Dark Gray / Board BG
         4'h1: get_colour = 6'b11_00_00; // 2:      Red
         4'h2: get_colour = 6'b00_10_00; // 4:      Green
         4'h3: get_colour = 6'b11_11_01; // 8:      Yellow (Red + Green)
@@ -84,7 +84,7 @@ module tt_um_vga_example(
         4'h9: get_colour = 6'b11_10_00; // 512:    Orange
         4'hA: get_colour = 6'b01_01_11; // 1024:   Light / Soft Blue
         4'hB: get_colour = 6'b11_01_11; // 2048:   Bright Magenta / Pink
-        default: get_colour = center ? 6'hFF : 6'b01_01_01;
+        default: get_colour = center ? 6'b11_11_11 : 6'b01_01_01;
       endcase
     end
     return get_colour;

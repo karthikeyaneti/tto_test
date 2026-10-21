@@ -9,12 +9,14 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+This is a Hardware Accelerated 2048 game with VGA Display Output. 4 Push buttons are used to give UP, LEFT, DOWN, and RIGHT Inputs. The game is displayed on the VGA Monitor.
 
 ## How to test
 
-Explain how to use your project
+Plug the TinyVGA PMOD into the TinyTapeout Demo Board. 
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+1. TinyVGA PMOD
+2. VGA to VGA Connector
+3. Push Buttons for Inputs
